@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "timemorph",
+  "version": "${version}",
+  "name": "TimeMorph",
+  "description": "Oyuncu ve mob modelleri Minecraft saatine göre değişir.",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.timemorph.TimeMorphClient"] },
+  "mixins": ["timemorph.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
